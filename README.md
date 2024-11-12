@@ -9,22 +9,22 @@ using System.Threading.Tasks;
 
 namespace Ativ.Idade18
 {
-    public class Program
-    {
-        static void Main(string[] args)
-        {
-            string idade;
-            int i = 1;
+public class Program
+{
+static void Main(string[] args)
+{
+string idade;
+int i = 1;
 
-            Console.WriteLine("Informe a idade: ");
-            idade = Console.ReadLine();
+Console.WriteLine("Informe a idade: ");
+idade = Console.ReadLine();
 
-            while (i <= 18)
-            {
-                Console.WriteLine("Menor de idade")
-            }
+while (i <= 18)
+{
+Console.WriteLine("Menor de idade")
+}
 
-            Console.ReadKey();
-        }
-    }
+Console.ReadKey();
+}
+}
 }
