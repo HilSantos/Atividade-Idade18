@@ -13,18 +13,25 @@ public class Program
 {
 static void Main(string[] args)
 {
-string idade;
-int i = 1;
 
-Console.WriteLine("Informe a idade: ");
-idade = Console.ReadLine();
+int idade;
 
-while (i <= 18)
-{
-Console.WriteLine("Menor de idade")
+  Console.Write("Digite a idade (idade negativa para encerrar): ");
+            idade = int.Parse(Console.ReadLine());
+
+  while (idade >= 0)
+            {
+                if (idade < 18)
+                    Console.WriteLine("Menor de idade.");
+                else
+                    Console.WriteLine("Maior de idade.");
+
+  Console.Write("Digite a idade (idade negativa para encerrar): ");
+                idade = int.Parse(Console.ReadLine());
+            }
+            Console.WriteLine("Programa encerrado.");
+            Console.ReadKey();
+        }
+    }
 }
 
-Console.ReadKey();
-}
-}
-}
